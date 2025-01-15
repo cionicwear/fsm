@@ -105,6 +105,7 @@ int32_t fsm_filter(struct fsm_ctx *ctx, uint32_t event_id);
 int32_t fsm_post_event(struct fsm_ctx *ctx, uint32_t event_id);
 int32_t fsm_post_event_isr(struct fsm_ctx *ctx, uint32_t event_id);
 int32_t fsm_get_current_state(struct fsm_ctx *ctx);
+int32_t fsm_get_prev_state(struct fsm_ctx *ctx);
 void fsm_update_prev_state(struct fsm_ctx *ctx, uint32_t state);
 struct fsm_state *fsm_get_state(struct fsm_ctx *ctx, uint32_t state);
 

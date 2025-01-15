@@ -200,3 +200,8 @@ void fsm_update_prev_state(struct fsm_ctx *ctx, uint32_t state)
 {
     ctx->prev_state = state;
 }
+
+int32_t fsm_get_prev_state(struct fsm_ctx *ctx)
+{
+    return ctx->prev_state;
+}
